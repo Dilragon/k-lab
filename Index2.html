@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>About Me</title>
+        <link href="icon2.png" rel="shortcut icon" type="image/x-icon">
+        <meta name="description" content="Первая глава рассказа. Приятного чтения!">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+:root {
+
+    --bg: hsl(225deg 6% 13% / 80%);
+    --text: black;
+    --text2: white;
+    --button: #ffffff;
+    --button-hv: darkred;
+    --mode: white;
+    --ripple: #c3c3c3d1;
+    --facade:#ffffff14;
+    --rounded: 10em;
+
+}
+
+::selection {
+    color: black;
+    background: darkred;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+header h1 {
+    margin-top: 50px;
+}
+
+p {
+    margin: 0.5cm;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+   
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Play', sans-serif;
+    line-height: 1.15;
+}
+  
+a {
+    color: var(--text);
+    text-decoration: none !important;
+    transition: color 150ms ease;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background: var(--cover) center;
+    color: var(--text2);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+}
+body:after {
+    background: var(--bg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    
+li {
+    list-style: none;
+}
+  
+.nextprev a:link, .nextprev a:visited {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dl-btn, .dl-btn:link, .dl-btn:visited {
+    color: #FFFFFF;
+    background: var(--button);
+}
+
+.nextprev {
+    min-width: 92px;
+    padding: 0.375rem 1rem;
+    margin: 0.375rem 0.5rem 0.375rem 0;
+    border: 0;
+    border-radius: 3px;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s all;
+    user-select: none;
+}
+
+.nextprev a {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 92px;
+    padding: 0.375rem 1rem;
+    margin: 0.375rem 0.5rem 0.375rem 0;
+    background: var(--button);
+    border: 0;
+    border-radius: 3px;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s all;
+    user-select: none;
+}
+
+.nextprev a:hover {
+    background: var(--button-hv);
+    margin-top: 0.2em;
+}
+
+.dl-left {
+    float: left!important;
+}
+
+.dl-right {
+    float: right!important;
+}
+
+.dl-btn {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w3-btn {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu:hover {
+    background: var(--button-hv);
+    margin-top: 0.2em;
+}
+    
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 92px;
+    padding: 0.375rem 1rem;
+    margin: 0.375rem 0.5rem 0.375rem 0;
+    background: var(--button);
+    border: 0;
+    border-radius: 3px;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s all;
+    user-select: none;
+}
+
+.menu a:hover {
+    background: var(--button-hv);
+    margin-top: 0.2em;
+}
+
+.menu_button {
+    align-items: center;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 40%;
+}
+
+.menu a {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 92px;
+    padding: 0.375rem 1rem;
+    margin: 0.375rem 0.5rem 0.375rem 0;
+    background: var(--button);
+    border: 0;
+    border-radius: 3px;
+    font-size: .875rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s all;
+    user-select: none;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: rgb(91, 87, 87);
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+.icon-bar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+    transition: 0.6s ease-in-out;
+}
+
+.icon-bar a:hover {
+    background-color: darkred;
+    transition: 0.6s ease-in-out;
+}
+
+.active {
+    background-color: rgb(255, 145, 0);
+}
+
+.chapter_heading {
+    margin-bottom: 50px;
+}
+
+.content {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    line-height: 2;
+    background: var(--bg);
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+        <section class="content">
+            <h1>Hello, I'm Dilmurod Abdujalilov</h1>
+        <p>Welcome to my personal page! I am a student on 11th grade of school.</p>
+        <p>I want to leard Web Programming to become a Frontend programmer. Within two months I plan to learn HTML&CSS and Javascrypt.</p>
+        <p>I had already learnt HTML&CSS in past, but I don't have deep knowledge and skills to be sure on myself.</p>
+        </section>
+        </main>
+    </body>
+</html>
