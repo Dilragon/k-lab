@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code box</title>
+    <meta name="description" content="Code box">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #170447e2;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .code-box {
+            background: rgb(50, 48, 48);
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-sizing: border-box;
+        }
+
+        .code-box pre {
+            background: rgba(34, 5, 73, 0.485);
+            color: white;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .code-box code {
+            white-space: pre;
+            display: block;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            box-sizing: border-box;
+            overflow-x: auto;
+            word-break: break-word;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0;
+        }
+
+        .lang-js {
+            padding: 1em 1em 1em .5em;
+            font: 15px "Lucida Console", "Lucida Sans Typewriter", monospace;
+            line-height: 1;
+        }
+
+        .lang-js .row {
+            display: block;
+            line-height: 1.2;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .lang-js .comment {
+            color: rgb(126, 109, 158);
+        }
+
+        .lang-js .function {
+            color: cyan;
+        }
+
+        .lang-js .punctuation-js {
+            color: yellow;
+        }
+
+        .lang-js .punctuation {
+            color: #fff;
+        }
+
+        .lang-js .string {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-box">
+        <pre class="lang-js">
+      <code class="lang-js">
+        <span class="row"><span class="comment">//Sample JavaScript code</span></span>
+        <span class="row"><span class="function">alert</span><span class="punctuation-js">(</span><span class="string">"Hello, World!"</span><span class="punctuation-js">)<span class="punctuation">;</span></span>
+      </code>
+    </pre>
+    </div>
+</body>
+
+</html>
