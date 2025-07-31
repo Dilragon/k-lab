@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div class='box'>
         <div class="profile-card">
             <img src={myPhoto} alt="My profile picture" class="profile-img" />
             <h1>John Doe</h1>

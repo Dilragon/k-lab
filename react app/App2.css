@@ -1,13 +1,12 @@
 .App {
   text-align: center;
-  position: relative; /* или absolute, fixed */
-  z-index: -1; /* Перемещает блок на задний план */
-  top: -100px !important;
-  left: -80px;
+  top: 300px;
+  left: 0px;
+  position: relative;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .App-header {
-  min-height: 100vh;
+  height: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

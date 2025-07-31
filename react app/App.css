@@ -6,16 +6,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
 }
 
-#root div {
-  padding: 20px;
-  margin: 0px;
-  border: 0;
-  top: 100px;
-  position: relative;
+.box {
+    position: relative;
+    top: 100px;
+    left: 0px;
 }
 
 /*Сard itself*/
@@ -79,6 +76,11 @@ p{
 }
 
 /*Contacts*/
+.contact-links {
+    left: 30px;
+    position: relative;
+}
+
 .contact-links a{
     display: inline-block;
     background-color: #3498db;
