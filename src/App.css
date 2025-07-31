@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/*Basement*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+    position: relative;
+    top: 100px;
+    left: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Сard itself*/
+.profile-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid 3498db;
+    margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/*Headlines*/
+h1{
+    color: rgb(201, 132, 6);
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+    color: orange;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+/*Bio*/
+p{
+    font-size: large;
+    line-height: normal;
+    color: darkgrey;
+    margin-bottom: 10px;
+}
+
+/*Skills list*/
+.skills-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.skills-list li{
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: normal;
+}
+
+/*Contacts*/
+.contact-links {
+    left: 30px;
+    position: relative;
+}
+
+.contact-links a{
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 1s;
+}
+
+.contact-links a:hover{
+    background-color: #2980b9;
 }

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import myPhoto from './myPhoto.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class='box'>
+        <div class="profile-card">
+            <img src={myPhoto} alt="My profile picture" class="profile-img" />
+            <h1>John Doe</h1>
+            <h2>Web Developer — Student</h2>
+            <p>I'm 17 years old, from Uzbekistan, Tashkent.</p>
+            <ul class="skills-list">
+                <li>HTML&CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:dilmurodabdujalilov0305@gmail.com" target="_blank">Email me</a>
+            <a href="https://github.com/Dilragon/k-lab" target="_blank">Github profile</a>
+            <a href="https://t.me/dilragon" target="_blank">Telegram</a>
+        </div>
     </div>
   );
 }
